@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_curs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_curs"
+            app:layout_constraintBottom_toBottomOf="@id/tv_materie"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_materie"
+            app:tint="@color/primaryColor" />
+
+        <TextView
+            android:id="@+id/tv_materie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textAppearance="@style/TextAppearance.Material3.HeadlineMedium"
+            android:textSize="19sp"
+            app:layout_constraintStart_toEndOf="@id/iv_curs"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Python" />
+
+        <ImageView
+            android:id="@+id/iv_sala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_sala"
+            app:layout_constraintBottom_toBottomOf="@id/tv_sala"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_sala"
+            app:tint="@color/primaryColor" />
+
+        <TextView
+            android:id="@+id/tv_sala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_materie"
+            tools:text="Haret" />
+
+        <ImageView
+            android:id="@+id/iv_ora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_ora"
+            app:layout_constraintBottom_toBottomOf="@id/tv_ziua"
+            app:layout_constraintEnd_toStartOf="@id/tv_ziua"
+            app:layout_constraintTop_toTopOf="@id/tv_ziua"
+            app:tint="@color/primaryColor" />
+
+        <TextView
+            android:id="@+id/tv_ziua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            app:layout_constraintBottom_toBottomOf="@id/tv_hour"
+            app:layout_constraintEnd_toStartOf="@id/tv_hour"
+            app:layout_constraintTop_toTopOf="@id/tv_hour"
+            tools:text="Vineri" />
+
+        <TextView
+            android:id="@+id/tv_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            app:layout_constraintBottom_toTopOf="@id/tv_sala"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_materie"
+            tools:text="12:00" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
